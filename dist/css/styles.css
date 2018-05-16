@@ -14,16 +14,20 @@ ul {
   list-style-type: none; }
 
 header {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr;
-  -ms-flex-pack: distribute;
-  justify-content: space-around;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  padding: 1rem;
-  width: 100vw; }
+  padding: 1rem; }
   header h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold; }
@@ -37,9 +41,7 @@ header {
       -webkit-transition: all 0.5s ease-in-out;
       transition: all 0.5s ease-in-out; }
   header #nav-mobile {
-    background: #403a3e;
-    background: -webkit-gradient(linear, left top, right top, from(#BE5869), to(#403A3E));
-    background: linear-gradient(to right, #BE5869, #403A3E);
+    background: #eee;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -47,8 +49,7 @@ header {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-    position: absolute;
-    left: 0;
+    position: fixed;
     top: -20rem;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
@@ -71,8 +72,10 @@ header {
         padding: 1rem; }
         header #nav-mobile ul li:nth-of-type(2) {
           padding-top: 2rem; }
+        header #nav-mobile ul li:last-of-type {
+          padding-bottom: 2rem; }
         header #nav-mobile ul li a {
-          color: #fff;
+          color: #333;
           font-size: 1rem;
           text-decoration: none; }
   header #nav-close {
@@ -82,3 +85,33 @@ header {
     header #nav-close:hover {
       text-decoration: none;
       opacity: 0.5; }
+
+@media (min-width: 768px) {
+  header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around; }
+    header #nav-mobile {
+      background: none;
+      color: #333;
+      top: 0;
+      position: relative; }
+      header #nav-mobile ul {
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: end;
+        -ms-flex-pack: end;
+        justify-content: flex-end; }
+        header #nav-mobile ul li {
+          padding: 1rem 0.75rem; }
+          header #nav-mobile ul li:nth-of-type(2) {
+            padding-top: 1rem; }
+          header #nav-mobile ul li:last-of-type {
+            padding-bottom: 1rem; }
+    header #menu-toggle, header .toggle {
+      display: none; } }

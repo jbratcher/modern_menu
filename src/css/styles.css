@@ -13,20 +13,16 @@ ul {
   list-style-type: none; }
 
 header {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: 'brand brand nav-mobile menu-toggle';
-  justify-content: space-around;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem;
-  width: 100vw; }
+  padding: 1rem; }
   header h1 {
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    grid-area: brand; }
+    font-weight: bold; }
   header #menu-toggle {
     color: #333;
-    grid-area: menu-toggle;
     position: absolute;
     top: 1rem;
     right: 1rem; }
@@ -37,7 +33,6 @@ header {
     background: #eee;
     display: flex;
     flex-direction: column;
-    grid-area: nav-mobile;
     position: fixed;
     top: -20rem;
     transition: all 0.5s ease-in-out;
@@ -68,17 +63,16 @@ header {
 
 @media (min-width: 768px) {
   header {
-    grid-template-areas: 'brand brand nav-mobile nav-mobile';
-    justify-content: space-between; }
+    flex-direction: row;
+    justify-content: space-around; }
     header #nav-mobile {
       background: none;
       color: #333;
-      display: flex;
-      position: static;
       top: 0;
-      right: 0; }
+      position: relative; }
       header #nav-mobile ul {
-        flex-direction: row; }
+        flex-direction: row;
+        justify-content: flex-end; }
         header #nav-mobile ul li {
           padding: 1rem 0.75rem; }
           header #nav-mobile ul li:nth-of-type(2) {
