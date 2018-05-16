@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0; }
 
-body {
+html, body {
   color: #333;
   background: #fefefe;
   font-family: 'Roboto', sans-serif;
@@ -16,10 +16,8 @@ header {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-areas: 'brand brand nav-mobile menu-toggle';
-  justify-content: space-around;
-  align-items: center;
-  padding: 1rem;
-  width: 100vw; }
+  justify-content: space-between;
+  padding: 1rem; }
   header h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
@@ -68,8 +66,7 @@ header {
 
 @media (min-width: 768px) {
   header {
-    grid-template-areas: 'brand brand nav-mobile nav-mobile';
-    justify-content: space-between; }
+    grid-template-areas: 'brand brand nav-mobile nav-mobile'; }
     header #nav-mobile {
       background: none;
       color: #333;

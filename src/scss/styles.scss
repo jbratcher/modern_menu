@@ -6,7 +6,7 @@
   padding: 0;
 }
 
-body {
+html, body {
   color: #333;
   background: #fefefe;
   font-family: 'Roboto', sans-serif;
@@ -25,10 +25,8 @@ header {
   grid-template-columns: repeat(4,1fr);
   grid-template-areas:
     'brand brand nav-mobile menu-toggle';
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
   padding: 1rem;
-  width: 100vw;
 
   h1 {
 
@@ -117,13 +115,12 @@ header {
 @media (min-width: 768px) {
 
     header {
-
+      
       grid-template-areas:
         'brand brand nav-mobile nav-mobile';
-      justify-content: space-between;
 
         #nav-mobile {
-
+          
           background: none;
           color: #333;
           display: flex;

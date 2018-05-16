@@ -6,7 +6,7 @@ A mobile first approach to a animated menu
 
 ### Version
 
-0.0.1
+0.0.2
 
 ## Install Dependencies
 
@@ -81,10 +81,16 @@ gulp clean:dist
 
 ## Known "bugs"
 
-
+* desktop menu alignment (menu should align to left edge of screen)
 
 
 #### Change Log
+
+###### v0.0.2
+
+* Added desktop menu
+* removed scss from dist folder, gulpfile.js
+* updated readme.md
 
 ###### v0.0.1
 
