@@ -13,17 +13,10 @@ ul {
   list-style-type: none; }
 
 header {
-<<<<<<< HEAD
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: 'brand brand nav-mobile menu-toggle';
-  justify-content: space-between;
-=======
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
->>>>>>> flexbox
   padding: 1rem; }
   header h1 {
     font-family: 'Roboto', sans-serif;
@@ -42,6 +35,7 @@ header {
     flex-direction: column;
     position: fixed;
     top: -20rem;
+    left: 0;
     transition: all 0.5s ease-in-out;
     width: 100vw; }
     header #nav-mobile:target {
@@ -70,12 +64,8 @@ header {
 
 @media (min-width: 768px) {
   header {
-<<<<<<< HEAD
-    grid-template-areas: 'brand brand nav-mobile nav-mobile'; }
-=======
     flex-direction: row;
     justify-content: space-around; }
->>>>>>> flexbox
     header #nav-mobile {
       background: none;
       color: #333;

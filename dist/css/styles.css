@@ -14,14 +14,6 @@ ul {
   list-style-type: none; }
 
 header {
-<<<<<<< HEAD
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas: 'brand brand nav-mobile menu-toggle';
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-=======
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -35,15 +27,12 @@ header {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
->>>>>>> flexbox
   padding: 1rem; }
   header h1 {
     font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    grid-area: brand; }
+    font-weight: bold; }
   header #menu-toggle {
     color: #333;
-    grid-area: menu-toggle;
     position: absolute;
     top: 1rem;
     right: 1rem; }
@@ -60,12 +49,9 @@ header {
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
-<<<<<<< HEAD
-    grid-area: nav-mobile;
-=======
->>>>>>> flexbox
     position: fixed;
     top: -20rem;
+    left: 0;
     -webkit-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
     width: 100vw; }
@@ -103,18 +89,6 @@ header {
 
 @media (min-width: 768px) {
   header {
-<<<<<<< HEAD
-    grid-template-areas: 'brand brand nav-mobile nav-mobile'; }
-    header #nav-mobile {
-      background: none;
-      color: #333;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      position: static;
-      top: 0;
-      right: 0; }
-=======
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -126,19 +100,14 @@ header {
       color: #333;
       top: 0;
       position: relative; }
->>>>>>> flexbox
       header #nav-mobile ul {
         -webkit-box-orient: horizontal;
         -webkit-box-direction: normal;
         -ms-flex-direction: row;
-<<<<<<< HEAD
-        flex-direction: row; }
-=======
         flex-direction: row;
         -webkit-box-pack: end;
         -ms-flex-pack: end;
         justify-content: flex-end; }
->>>>>>> flexbox
         header #nav-mobile ul li {
           padding: 1rem 0.75rem; }
           header #nav-mobile ul li:nth-of-type(2) {
