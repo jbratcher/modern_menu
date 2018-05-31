@@ -79,7 +79,7 @@ gulp.task('img', () =>
 gulp.task('browserSync', gulp.parallel('sass', function() {
   browserSync.init({
       server: "./",
-      port: 3000
+      port: 8082
 }),
     gulp.watch("src/scss/*.scss", gulp.parallel('sass')),
     gulp.watch("src/*.html").on('change', browserSync.reload),
