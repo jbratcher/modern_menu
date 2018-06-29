@@ -31,6 +31,11 @@ header {
 
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
+    
+    &:hover {
+      opacity: 0.5;
+      transition: all 0.5s ease-in-out;
+    }
 
   }
 
@@ -49,7 +54,7 @@ header {
 
   #nav-mobile {
     background: #eee;
-    // background: linear-gradient(to right, #BE5869, #403A3E);
+    background: radial-gradient(circle at top right, #fefefe, #efefef, #eee);
     display: flex;
     flex-direction: column;
     position: fixed;

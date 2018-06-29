@@ -31,6 +31,10 @@ header {
   header h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold; }
+    header h1:hover {
+      opacity: 0.5;
+      -webkit-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out; }
   header #menu-toggle {
     color: #333;
     position: absolute;
@@ -42,6 +46,7 @@ header {
       transition: all 0.5s ease-in-out; }
   header #nav-mobile {
     background: #eee;
+    background: radial-gradient(circle at top right, #fefefe, #efefef, #eee);
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
