@@ -38,12 +38,12 @@ header {
     display: flex;
     flex-direction: column;
     position: fixed;
-    top: -20rem;
-    left: 0;
+    top: 0;
+    left: -30rem;
     transition: all 0.5s ease-in-out;
     width: 100vw; }
     header #nav-mobile:target {
-      transform: translateY(20rem); }
+      transform: translateX(30rem); }
     header #nav-mobile ul {
       display: flex;
       flex-direction: column;
