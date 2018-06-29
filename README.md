@@ -1,12 +1,12 @@
 # Modern Menu
 
-A mobile first approach to a animated menu
+A mobile first approach to a animated menu using only CSS
 
 [Gist Link](https://gist.github.com/jbratcher/0a0c1454c83a6468b3f10d6847b9ff5f)
 
 ### Version
 
-0.0.2
+0.0.3
 
 ## Install Dependencies
 
@@ -27,32 +27,6 @@ OR
 npm start
 ```
 
-## Folder and File Structure
-
-/src
-    /css
-    styles.css
-        /vendor
-        -font-awesome.min.css
-    /fonts
-    -fontawesome-webfont.eot
-    -fontawesome-webfont.svg
-    -fontawesome-webfont.ttf
-    -fontawesome-webfont.wotf
-    -fontawesome-webfont.wotf2
-    -FontAwesome.otf
-    /img
-    /js
-        -index.js
-        -main.js
-    /scss
-    -styles.scss
--index.html
--gulpfile.js
--LICENSE
--package.json
--readme.md
-
 ## Bundle and minify compiled CSS and JS
 
 ```bash
@@ -72,19 +46,22 @@ gulp clean:dist
 
 ## Features: 
 
-
+* simple, css-only transitions
 
 ## Future Features:
 
-
-
+* less invasive bottom transition (currently using opacity: 0 to hide menu on page)
 
 ## Known "bugs"
 
-* desktop menu alignment (menu should align to left edge of screen)
-
+* ???
 
 #### Change Log
+
+###### v0.0.2
+
+* Added right, left, and bottom options
+* updated readme.md
 
 ###### v0.0.2
 
